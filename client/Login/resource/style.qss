@@ -1,0 +1,223 @@
+QWidget#title_widget{
+    background-image: url(:/pic/resource/img/titilebar_backgroundimg.png);
+}
+
+QTabBar::tab{
+        border-top-left-radius:6px;
+        border-top-right-radius:6px;
+        color: #181818;
+        min-width: 150px;
+        min-height: 20px;
+        font: 14pt "微软雅黑";
+        padding: 6px 10px 6px 10px;
+        /*margin:1px;*/
+        background-color: #b2e3f2;
+}
+
+QTabBar::tab:hover {
+        background-color: #00a7f5;
+        color: #FFFFFF;
+}
+
+QTabBar::tab:selected {
+        background-color: #1ca4ff;
+        color: #FFFFFF;
+}
+
+.QPushButton{
+        border-style: none;
+        border: 0px;
+/*	color: #F0F0F0;*/
+/*        font-size:12px;*/
+        font: 12pt "微软雅黑";
+        color:#000000;
+        padding: 5px;
+        /*min-height: 20px;*/
+        border-radius:5px;
+/*	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4D4D4D, stop:1 #292929); */
+        background-image: url(:/pic/resource/img/button/button_default.png);
+}
+
+/*左右按钮样式*/
+
+
+
+
+.QPushButton[focusPolicy="0"] {
+        border-style: none;
+        border: 0px;
+        color: #F0F0F0;
+        padding: 0px;
+        min-height: 10px;
+        border-radius:3px;
+/*	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4D4D4D, stop:1 #292929); */
+}
+
+.QPushButton:hover{
+/*	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #636363, stop:1 #575757);*/
+        color: #FFFFFF;
+        background-image: url(:/pic/resource/img/button/button_hover.png);
+
+}
+
+.QPushButton:pressed{
+/*	background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #4D4D4D, stop:1 #292929);*/
+        background-image: url(:/pic/resource/img/button/button_pressed.png);
+}
+
+QPushButton#the_left_pushButton,
+QPushButton#the_right_pushButton{
+    border-style: none;
+    border: 0px;
+    /*max-height: 20px;
+    min-height: 20px;*/
+    border-radius:3px;
+    background-image: url(:/pic/resource/img/fanye/fanye2_mo_30_20.png);
+}
+QPushButton#the_left_pushButton:hover,
+QPushButton#the_right_pushButton:hover{
+    background-image: url(:/pic/resource/img/fanye/fanye2_hua_30_20.png);
+}
+
+QPushButton#the_left_pushButton:pressed,
+QPushButton#the_right_pushButton:pressed{
+    background-image: url(:/pic/resource/img/fanye/fanye2_enn_30_20.png);
+}
+
+QPushButton#the_left_pushButton:disabled,
+QPushButton#the_right_pushButton:disabled{
+    background-image: url(:/pic/resource/img/fanye/fanye_wu_30_20.png);
+}
+
+
+
+
+QPushButton#to_left_pushButton,
+QPushButton#to_left_pushButton_2,
+QPushButton#niandu_roll_to_left_pushButton,
+QPushButton#niandu_file_to_left_pushButton{
+    border-style: none;
+    border: 0px;
+    border-radius:3px;
+    background-image: url(:/pic/resource/img/back/back2_mo_20.png);
+}
+
+QPushButton#to_left_pushButton:hover,
+QPushButton#to_left_pushButton_2:hover,
+QPushButton#niandu_roll_to_left_pushButton:hover,
+QPushButton#niandu_file_to_left_pushButton:hover{
+    background-image: url(:/pic/resource/img/back/back2_hua_20.png);
+}
+QPushButton#to_left_pushButton:pressed,
+QPushButton#to_left_pushButton_2:pressed,
+QPushButton#niandu_roll_to_left_pushButton:pressed,
+QPushButton#niandu_file_to_left_pushButton:pressed{
+    background-image: url(:/pic/resource/img/back/back2_en_20.png);
+}
+QPushButton#to_left_pushButton:disabled,
+QPushButton#to_left_pushButton_2:disabled,
+QPushButton#niandu_roll_to_left_pushButton:disabled,
+QPushButton#niandu_file_to_left_pushButton:disabled{
+    background-image: url(:/pic/resource/img/back/back2_no_20.png);
+}
+
+
+QPushButton#to_right_pushButton,
+QPushButton#to_right_pushButton_2,
+QPushButton#niandu_roll_to_right_pushButton,
+QPushButton#niandu_file_to_right_pushButton
+{
+    border-style: none;
+    border: 0px;
+    /*max-height: 20px;
+    min-height: 20px;*/
+    border-radius:3px;
+    background-image: url(:/pic/resource/img/go/gogo2_mo_20.png);
+}
+QPushButton#to_right_pushButton:hover,
+QPushButton#to_right_pushButton_2:hover,
+QPushButton#niandu_roll_to_right_pushButton:hover,
+QPushButton#niandu_file_to_right_pushButton:hover{
+    background-image: url(:/pic/resource/img/go/gogo2_hua_20.png);
+}
+QPushButton#to_right_pushButton:pressed,
+QPushButton#to_right_pushButton_2:pressed,
+QPushButton#niandu_roll_to_right_pushButton:pressed,
+QPushButton#niandu_file_to_right_pushButton:pressed{
+    background-image: url(:/pic/resource/img/go/gogo2_en_20.png);
+}
+QPushButton#to_right_pushButton:disabled,
+QPushButton#to_right_pushButton_2:disabled,
+QPushButton#niandu_roll_to_right_pushButton:disabled,
+QPushButton#niandu_file_to_right_pushButton:disabled{
+    background-image: url(:/pic/resource/img/go/gogo2_no_20.png);
+}
+
+
+QPushButton#the_left_pushButton_2,
+QPushButton#the_right_pushButton_2,
+QPushButton#niandu_roll_the_left_pushButton,
+QPushButton#niandu_roll_the_right_pushButton,
+QPushButton#niandu_file_the_left_pushButton,
+QPushButton#niandu_file_the_right_pushButton
+{
+    border-style: none;
+    border: 0px;
+    /*max-height: 20px;
+    min-height: 20px;*/
+    border-radius:3px;
+    background-image: url(:/pic/resource/img/fanye/fanye2_mo_30_20.png);
+}
+QPushButton#the_left_pushButton_2:hover,
+QPushButton#the_right_pushButton_2:hover,
+QPushButton#niandu_roll_the_left_pushButton:hover,
+QPushButton#niandu_roll_the_right_pushButton:hover,
+QPushButton#niandu_file_the_left_pushButton:hover,
+QPushButton#niandu_file_the_right_pushButton:hover{
+    background-image: url(:/pic/resource/img/fanye/fanye2_hua_30_20.png);
+}
+
+QPushButton#the_left_pushButton_2:pressed,
+QPushButton#the_right_pushButton_2:pressed,
+QPushButton#niandu_roll_the_left_pushButton:pressed,
+QPushButton#niandu_roll_the_right_pushButton:pressed,
+QPushButton#niandu_file_the_left_pushButton:pressed,
+QPushButton#niandu_file_the_right_pushButton:pressed{
+    background-image: url(:/pic/resource/img/fanye/fanye2_enn_30_20.png);
+}
+
+QPushButton#the_left_pushButton_2:disabled,
+QPushButton#the_right_pushButton_2:disabled,
+QPushButton#niandu_roll_the_left_pushButton:disabled,
+QPushButton#niandu_roll_the_right_pushButton:disabled,
+QPushButton#niandu_file_the_left_pushButton:disabled,
+QPushButton#niandu_file_the_right_pushButton:disabled{
+    background-image: url(:/pic/resource/img/fanye/fanye_wu_30_20.png);
+}
+
+
+
+
+QTreeWidget#folder_treeWidget::item
+{
+        height:25px;
+}
+
+QTableView::item, QListView::item, QTreeView::item {
+
+        margin: 0px;
+}
+
+QTreeView::item:selected:hover{
+        color:#00a7f5;
+        selection-color: #00a7f5;
+}
+
+
+QDateEdit{
+        border-radius: 2px;
+        font: 14pt "微软雅黑";
+        padding: 0px 0px 0px 0px;
+        border: 1px solid #666666;
+}
+

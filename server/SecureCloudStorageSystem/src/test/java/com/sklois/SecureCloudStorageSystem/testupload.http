@@ -1,0 +1,55 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST https://127.0.0.1:9443/dataupload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+sessionid:1a589d9f11b6c06e985354219273f826fd4a87ae16da86de6f83090863350d6d
+
+--WebAppBoundary
+Content-Type: application/octet-stream
+Content-Disposition: form-data; name="file";filename="hello.docx"
+metadata:{"filename":"hello.docx","fileuniqueid":"fileuniqueid12121212"}
+fileuniqueid: xxxxxxxxxxxxxxxxx
+cipherindex:{"xxxxxxxxxxxxxxx":10}
+encryptkey:xxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+< ./hello.docx
+--WebAppBoundary
+
+###
+
+
+POST http://localhost:8888/upload
+Accept: */*
+Cache-Control: no-cache
+username: sysadmin
+password: 123456
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryG98xBNbP4RfkfCfp
+
+------WebKitFormBoundaryG98xBNbP4RfkfCfp
+Content-Disposition: form-data; name="file" filename="1.pdf"
+Content-Type: application/pdf
+#Content-Type: application/octet-stream
+
+< ./1.pdf
+------WebKitFormBoundaryG98xBNbP4RfkfCfp
+Content-Disposition: form-data; name="currentid"
+
+20191220151551-MWwdqTU0Bl2BRHJRjH17oWbrCLY6B2fsp
+------WebKitFormBoundaryG98xBNbP4RfkfCfp
+Content-Disposition: form-data; name="metadata"
+
+{"rollanjuanjidanghao":"123","anjuanjidanghao":"123","wenjianjidanghao":"123"}
+------WebKitFormBoundaryG98xBNbP4RfkfCfp
+Content-Disposition: form-data; name="ifadddarkseal"
+
+1
+------WebKitFormBoundaryG98xBNbP4RfkfCfp--
+
+
+###

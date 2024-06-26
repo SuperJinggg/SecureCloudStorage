@@ -1,0 +1,39 @@
+target_sources("${PROJECT_NAME}" PRIVATE
+               FileShare/cancelshare.cpp
+               FileShare/datashareentity.cpp
+               FileShare/filesharewidget.cpp
+               FileShare/getsharedlist.cpp
+               FileShare/getsharelist.cpp
+               FileStructureList/filestructurelist.cpp
+               FolderStructureList/folderstructurelist.cpp
+               entities/filemetadata.cpp
+               entities/localtreewidgetitem.cpp
+               operationwidget.cpp
+               securitycloudstorageclientwidget.cpp
+               SearchResult/searchresultwidget.cpp
+               transformentity/downloadfileentity.cpp
+               transformentity/downloadoperation.cpp
+               transformentity/uploadfileentity.cpp
+               transformentity/uploadoperation.cpp
+               transformlistform/downloadlistform.cpp
+               transformlistform/transformlistform.cpp
+               transformlistform/uploadlistform.cpp
+               tst_testname.cpp
+               FileShare/filesharewidget.ui
+               operationwidget.ui
+               securitycloudstorageclientwidget.ui
+               SearchResult/searchresultwidget.ui
+               transformlistform/downloadlistform.ui
+               transformlistform/transformlistform.ui
+               transformlistform/uploadlistform.ui
+               )
+
+target_link_libraries("${PROJECT_NAME}"
+                      Qt5::Core
+                      Qt5::Widgets
+                      Qt5::Network
+                      Qt5::Test
+                      ${CMAKE_CURRENT_LIST_DIR}/lib/libYunLock.a
+                      ${CMAKE_CURRENT_LIST_DIR}/lib/libCipherIndexLib.a
+                      )
+

@@ -1,0 +1,9 @@
+POST https://127.0.0.1:9443/folderstructurelist
+Accept: */*
+Cache-Control: no-cache
+sessionid: a3483435dbbea3ed3871c45e603e803e792ba7c7bc147beebe91d0d7387a9d42
+Content-Type: application/json
+
+{"method":"folderstructurelist","timestamp":"2019-10-22 13:01:30","version":"1.0"}
+
+###
